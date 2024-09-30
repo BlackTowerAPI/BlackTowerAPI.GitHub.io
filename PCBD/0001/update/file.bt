@@ -1,1 +1,7 @@
-https://github.com/BlackTowerAPI/BlackTowerAPI.GitHub.io/blob/f29b76f04cddcf2199440b08201f3fb01ddced70/PCBD/main.exe
+import requests
+url = 'https://BlackTowerAPI.GitHub.io/PCBD/0001/update/main.exe'
+file_data = requests.get(url).content
+with open('main.exe','wb') as f:
+    f.write(file_data)
+    f.close()
+print('文件下载成功!')
